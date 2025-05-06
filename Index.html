@@ -6,25 +6,25 @@
 </head>
 <body>
     <nav>
-        <a id="btnMenuPrincipal" class="btnNav btnNavHome" onclick="btnOnclick(this)">
+        <a id="btnMenuPrincipal" class="btnNav btnNavHome">
             <img src="./Images/MenuPrincipal.png" alt="imgMenuPrincipal" class="imgNav">
         </a>
-        <button id="btnPlus" class="btnNav btnNavHome" onclick="btnOnclick(this)">
+        <button id="btnPlus" class="btnNav btnNavHome">
             +
         </button>
-        <a id="btnHome" class="btnNav btnNavHome" onclick="btnOnclick(this)" href="Index.html">
+        <a id="btnHome" class="btnNav btnNavHome" href="Index.html">
             <img src="./Images/Home.png" alt="imgHome" class="imgNav">
         </a>
         <p class="navText">Accueil</p>
-        <a id="btnAccount" class="btnNav btnNavHome" onclick="btnOnclick(this)" href="Account.html">
+        <a id="btnAccount" class="btnNav btnNavHome" href="Account.html">
             <img src="./Images/Account.png" alt="imgAccount" class="imgNav">
         </a>
         <p class="navText">Compte</p>
-        <a id="btnSettings" class="btnNav btnNavHome" onclick="btnOnclick(this)" href="Settings.html">
+        <a id="btnSettings" class="btnNav btnNavHome" href="Settings.html">
             <img src="./Images/Settings.png" alt="imgSettings" class="imgNav">
         </a>
         <p class="navText">Paramètres</p>
-        <a id="btnCart" class="btnNav btnNavHome" onclick="btnOnclick(this)" href="Cart.html">
+        <a id="btnCart" class="btnNav btnNavHome" href="Cart.html">
             <img src="./Images/Cart.png" alt="imgCart" class="imgNav">
         </a><p class="navText">Panier</p>
     </nav>
@@ -34,24 +34,16 @@
                 <img src="./Images/leftArrow.png" alt="imgLeftArrow" id="imgLeftArrow">
             </a>
             <h1>PepetStore™</h1>
-        </section>
-        <section id="Section2">
-            <label class="container">
-                <input type="radio" id="Petroucka-id" name="TypeChat" value="Petrouchka"Petrouchka>
-                <span class="checkmark"></span>
-            </label>
-            <label class="container">Bibi
-                <input type="radio" id="Bibi-id" name="TypeChat" value="Bibi">
-                <span class="checkmark"></span>
-            </label>
-            <label class="container">Doukie
-                <input type="radio" id="Doukie-id" name="TypeChat" value="Doukie">
-                <span class="checkmark"></span>
-            </label>
-            <label class="container">Autre
-                <input type="radio" id="Autre-id" name="TypeChat" value="Autre">
-                <span class="checkmark"></span>
-            </label>
+            <button id="btnAll" class="btnFilter" onclick="btnOnclick(this)">Tout
+            </button>
+            <button id="btnPetrouchka" class="btnFilter" onclick="btnOnclick(this)">Petrouchka
+            </button>
+            <button id="btnBibi" class="btnFilter" onclick="btnOnclick(this)">Bibi
+            </button>
+            <button id="btnDoukie" class="btnFilter" onclick="btnOnclick(this)">Doukie
+            </button>
+            <button id="btnOther" class="btnFilter" onclick="btnOnclick(this)">Autre
+            </button>
         </section>
     </main>
 </body>

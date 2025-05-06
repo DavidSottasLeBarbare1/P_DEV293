@@ -1,6 +1,15 @@
 html, body {
     display: flex;
     margin: 0;
+    background-color: #fef7ff;
+}
+
+h1{
+    font-family: cursive;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 0;
+    margin-bottom: 10vh;
 }
 
 #btnHome.btnNavHome{
@@ -29,7 +38,7 @@ html, body {
     transition: all 100ms;
 }
 
-button, a{
+a{
     border: none;
     background: none;
 }
@@ -59,11 +68,11 @@ button, a{
     background: #ffb2c9;
 }
 
-nav {
+nav{
     display: flex;
     flex-direction: column;
     width: 100px;
-    margin-top: 100px;
+    margin-top: 15vh;
     text-align: center;
     align-items: center;
     font-family: cursive;
@@ -79,9 +88,24 @@ nav {
 }
 
 #imgLeftArrow{
-    height: 25px;
+    height: 45px;
 }
 
 #Section1{
-    margin-top: 10rem;
+}
+
+.btnFilter{
+    padding: 13px 16px 13px 16px;
+    background: none;
+    border: solid 1.7px;
+    border-color: #cac4d0;
+    border-radius: 8px;
+    font-family: cursive;
+    line-height: 0;
+}
+
+main{   
+    display: flex;
+    margin: 4vh 0 0 14vw;
+    background-color: #ffffff;
 }
