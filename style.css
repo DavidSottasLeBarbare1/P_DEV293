@@ -1,0 +1,87 @@
+html, body {
+    display: flex;
+    margin: 0;
+}
+
+#btnHome.btnNavHome{
+    border-radius: 18px;
+    background-color: #e8def8;
+}
+
+#btnAccount.btnNavAccount{
+    border-radius: 18px;
+    background-color: #e8def8;
+}
+
+#btnCart.btnNavCart{
+    border-radius: 18px;
+    background-color: #e8def8;
+}
+#btnSettings.btnNavSettings{
+    border-radius: 18px;
+    background-color: #e8def8;
+}
+.btnNav {
+    border: none;
+    background: none;
+    width: 65px;
+    height: 40px;
+    transition: all 100ms;
+}
+
+button, a{
+    border: none;
+    background: none;
+}
+
+.btnNav:hover {
+    border-radius: 18px;
+    background-color: #e8def8;
+}
+
+#btnMenuPrincipal{
+    margin-bottom: 35px;
+}
+
+#btnPlus {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    background: #ffd8e4;
+    font-size: 2em;
+    color: #633b48;
+    line-height: 0;
+    transition: all 400ms;
+    margin-bottom: 50px;
+}
+
+#btnPlus:hover{
+    background: #ffb2c9;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin-top: 100px;
+    text-align: center;
+    align-items: center;
+    font-family: cursive;
+    line-height: 0;
+}
+
+.imgNav{
+    height: 35px;
+}
+
+.navText{
+    margin-bottom: 50px;
+}
+
+#imgLeftArrow{
+    height: 25px;
+}
+
+#Section1{
+    margin-top: 10rem;
+}
