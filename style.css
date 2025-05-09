@@ -1,35 +1,30 @@
-html, body {
+html,
+body {
     display: flex;
     margin: 0;
     background-color: #fef7ff;
 }
 
-h1{
-    font-family: cursive;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 0;
-    margin-bottom: 10vh;
-}
-
-#btnHome.btnNavHome{
+#btnHome.btnNavHome {
     border-radius: 18px;
     background-color: #e8def8;
 }
 
-#btnAccount.btnNavAccount{
+#btnAccount.btnNavAccount {
     border-radius: 18px;
     background-color: #e8def8;
 }
 
-#btnCart.btnNavCart{
+#btnCart.btnNavCart {
     border-radius: 18px;
     background-color: #e8def8;
 }
-#btnSettings.btnNavSettings{
+
+#btnSettings.btnNavSettings {
     border-radius: 18px;
     background-color: #e8def8;
 }
+
 .btnNav {
     border: none;
     background: none;
@@ -38,7 +33,7 @@ h1{
     transition: all 100ms;
 }
 
-a{
+a {
     border: none;
     background: none;
 }
@@ -48,7 +43,7 @@ a{
     background-color: #e8def8;
 }
 
-#btnMenuPrincipal{
+#btnMenuPrincipal {
     margin-bottom: 35px;
 }
 
@@ -64,11 +59,11 @@ a{
     margin-bottom: 50px;
 }
 
-#btnPlus:hover{
+#btnPlus:hover {
     background: #ffb2c9;
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: column;
     width: 100px;
@@ -79,33 +74,97 @@ nav{
     line-height: 0;
 }
 
-.imgNav{
+.imgNav {
     height: 35px;
 }
 
-.navText{
+.navText {
     margin-bottom: 50px;
 }
 
-#imgLeftArrow{
+#imgLeftArrow {
     height: 45px;
 }
 
-#Section1{
+#PepetStore {
+    font-family: cursive;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 0;
+    margin-bottom: 6vh;
 }
 
-.btnFilter{
-    padding: 13px 16px 13px 16px;
+
+#section2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 0 0.5vw 0 0.5vw;
+    border-radius: 0 0 20px 20px;
+}
+
+.btnFilter {
+    padding: 17px 20px 17px 20px;
     background: none;
     border: solid 1.7px;
     border-color: #cac4d0;
     border-radius: 8px;
     font-family: cursive;
     line-height: 0;
+    font-size: 24px;
 }
 
-main{   
-    display: flex;
-    margin: 4vh 0 0 14vw;
+main {
+    margin: 4vh 0 0 4vw;
+    border-radius: 10px;
+    width: 80vw;
+}
+
+#btnAll {
+    background-color: #e8def8;
+}
+
+.imgSearch {
+    object-fit: cover;
+    height: 205px;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+}
+
+.btnSearch {
+    border: none;
+    background: none;
+}
+
+#divBtnFilter {
     background-color: #ffffff;
+    padding: 1vw 0 1vw 0.7vw;
+    border-radius: 20px 20px 0 0;
+}
+
+.divBtnSearch {
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    margin-bottom: 2.5rem;
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 8vh;
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(99, 24, 67, 1) 50%, rgba(84, 26, 99, 1) 100%);
+    transition: all 800ms;
+}
+
+footer:hover {
+    height: 20vh;
+}
+
+.paragrapheFooter {
+    color: #ffffff;
 }
