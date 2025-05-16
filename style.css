@@ -5,6 +5,11 @@ body {
     background-color: #fef7ff;
 }
 
+button{
+    border: none;
+    background: none;
+}
+
 #btnHome.btnNavHome {
     border-radius: 18px;
     background-color: #e8def8;
@@ -87,7 +92,7 @@ nav {
     height: 45px;
 }
 
-#PepetStore {
+.titlePage {
     font-family: cursive;
     font-weight: normal;
     font-size: 50px;
@@ -95,6 +100,11 @@ nav {
     margin-bottom: 6vh;
 }
 
+.section1Product{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+}
 
 #section2 {
     display: flex;
@@ -130,11 +140,6 @@ main {
     height: 220px;
     aspect-ratio: 1/1;
     border-radius: 20px;
-}
-
-.btnSearch {
-    border: none;
-    background: none;
 }
 
 #divBtnFilter {
@@ -220,4 +225,17 @@ footer img{
 
 footer:hover #divContact :not(.titleFooter){
     display: flex;
+}
+
+.imgProduct{
+    border-radius: 20px;
+    margin: 2vh 0 0 2vw;
+    aspect-ratio: 1/1;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.section2Product{
+    background-color: #ffffff;
+    border-radius: 20px;
 }
