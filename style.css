@@ -3,6 +3,7 @@ body {
     display: flex;
     margin: 0;
     background-color: #fef7ff;
+    font-family: cursive;
 }
 
 button{
@@ -76,7 +77,7 @@ nav {
     margin-top: 15vh;
     text-align: center;
     align-items: center;
-    font-family: cursive;
+    
     line-height: 0;
 }
 
@@ -93,7 +94,7 @@ nav {
 }
 
 .titlePage {
-    font-family: cursive;
+    
     font-weight: normal;
     font-size: 50px;
     line-height: 0;
@@ -122,7 +123,7 @@ nav {
     border: solid 1.7px;
     border-color: #cac4d0;
     border-radius: 8px;
-    font-family: cursive;
+    
     line-height: 0;
     font-size: 24px;
     text-decoration: none;
@@ -152,7 +153,7 @@ main {
 
 .divBtnSearch {
     text-align: center;
-    font-family: cursive;
+    
     font-size: 20px;
     margin-bottom: 2.5rem;
 }
@@ -187,7 +188,7 @@ footer {
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(99, 24, 67, 1) 50%, rgba(84, 26, 99, 1) 100%);
     transition: all 800ms;
     justify-content: center;
-    font-family: cursive;
+    
     gap: 25vw;
 }
 
@@ -227,7 +228,7 @@ footer:hover #divContact :not(.titleFooter){
     display: flex;
 }
 
-.imgProduct{
+#imgProduct{
     border-radius: 20px;
     margin: 2vh 0 0 2vw;
     aspect-ratio: 1/1;
@@ -236,6 +237,83 @@ footer:hover #divContact :not(.titleFooter){
 }
 
 .section2Product{
+    display: flex;
     background-color: #ffffff;
     border-radius: 20px;
+}
+
+#imgProduct:hover {
+    opacity: 0.7;
+}
+
+#modalProduct{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+#modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 20px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  font-size: 3rem;
+  width: 80%;
+  text-align: center;
+  color: #fef7ff;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fef7ff;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  
+}
+
+.close:hover, .close:focus {
+  color: #fef7ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#prix{
+    font-size: 4rem;
+    color: #49454f;
+    line-height: 0;
+}
+
+#divPrixDesc{
+    flex-wrap: wrap;
+    margin: 5vh 0 0 5vw;
+}
+
+#description{
+    max-width: 20px;
+}
+
+#btnBuy{
+    background-color: #000000;
+}
+
+#divAddtocart{
+    position: absolute;
 }
