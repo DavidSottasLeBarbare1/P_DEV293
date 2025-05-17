@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Mon Compte</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a id="btnMenuPrincipal" class="btnNav btnNavAccount" onclick="btnOnclick(this)">
+            <img src="./Images/MenuPrincipal.png" alt="imgMenuPrincipal" class="imgNav">
+        </a>
+        <button id="btnPlus" class="btnNav btnNavAccount" onclick="btnOnclick(this)">
+            +
+        </button>
+        <a id="btnHome" class="btnNav btnNavAccount" onclick="btnOnclick(this)" href="Index.html">
+            <img src="./Images/Home.png" alt="imgHome" class="imgNav">
+        </a>
+        <p class="navText">Accueil</p>
+        <a id="btnAccount" class="btnNav btnNavAccount" onclick="btnOnclick(this)" href="Account.html">
+            <img src="./Images/Account.png" alt="imgAccount" class="imgNav">
+        </a>
+        <p class="navText">Compte</p>
+        <a id="btnSettings" class="btnNav btnNavAccount" onclick="btnOnclick(this)" href="Settings.html">
+            <img src="./Images/Settings.png" alt="imgSettings" class="imgNav">
+        </a>
+        <p class="navText">Paramètres</p>
+        <a id="btnCart" class="btnNav btnNavAccount" onclick="btnOnclick(this)" href="Cart.html">
+            <img src="./Images/Cart.png" alt="imgCart" class="imgNav">
+        </a>
+        <p class="navText">Panier</p>
+    </nav>
+    <main>
+        <section id="Section1">
+            <a id="btnLeftArrow" href="Index.html">
+                <img src="./Images/leftArrow.png" alt="imgLeftArrow" id="imgLeftArrow">
+            </a>
+            <h1 id="PepetStore" class="titlePage">Connexion</h1>
+        </section>
+        </section>
+        <div id="loginContainer">
+            <div class="loginHeader">
+                <p class="loginMessage">Connectez-vous à votre compte Petrouch</p>
+            </div>
+
+            <form id="loginForm">
+                <div class="formGroup">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="formGroup">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required>
+                    <a href="resetPassword.html" class="forgotPassword">Mot de passe oublié ?</a>
+                </div>
+
+                <button type="submit" class="btnLogin">Se connecter</button>
+            </form>
+
+            <div class="divider">
+                <div class="divider-line"></div>
+                <div class="divider-text">ou</div>
+                <div class="divider-line"></div>
+            </div>
+
+            <div class="socialLogin">
+                <div class="socialBtn">
+                    <img class="imgSocial" src="./Images/google.png" alt="Google" title="Se connecter avec Google">
+                </div>
+                <div class="socialBtn">
+                    <img class="imgSocial" src="./Images/facebook.png" alt="Facebook" title="Se connecter avec Facebook">
+                </div>
+                <div class="socialBtn">
+                    <img class="imgSocial" src="./Images/apple.png" alt="Apple" title="Se connecter avec Apple">
+                </div>
+            </div>
+
+            <p class="accountPrompt">Pas de compte ? <a href="createAccount.html" class="signupLink">Créer un
+                    compte</a></p>
+        </div>
+    </main>
+    <footer>
+        <div id="divContact">
+            <p class="paragrapheFooter titleFooter">Des questions ?</p>
+            <p class="paragrapheFooter">Contactez moi sur :</p>
+            <p class="paragrapheFooter"><a href=mailto:david.sottas@eduvaud.ch>david.sottas@eduvaud.ch</a></p>
+            <p class="paragrapheFooter">Ou écrivez moi un formulaire :</p>
+            <p class="paragrapheFooter"><a href="contact.html" target="_blank">Contact</a><img id="imgLienExterne"
+                    alt="lienExterne" src="/Images/lienExterne.png"></p>
+        </div>
+        <div id="divAuthor">
+            <p class="paragrapheFooter titleFooter">À propos</p>
+            <p class="paragrapheFooter"><a href="author.html" target="_blank">Auteur</a><img id="imgLienExterne"
+                    alt="lienExterne" src="/Images/lienExterne.png"></p>
+            <p class="paragrapheFooter"><a href="https://www.etml.ch/" target="_blank">ETML</a><img id="imgLienExterne"
+                    alt="lienExterne" src="/Images/lienExterne.png"></p>
+            <p class="paragrapheFooter"><a href="https://www.preverenges.ch/" target="_blank">Lieu de
+                    fabrication</a><img id="imgLienExterne" alt="lienExterne" src="/Images/lienExterne.png"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

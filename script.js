@@ -13,3 +13,9 @@ img.onclick = function(){
 span.onclick = function() {
   modalProduct.style.display = "none";
 }
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  alert('Votre message a été envoyé. Merci de nous avoir contactés!');
+  this.reset();
+});
