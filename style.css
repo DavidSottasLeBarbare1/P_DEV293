@@ -6,7 +6,7 @@ body {
     font-family: cursive;
 }
 
-button{
+button {
     border: none;
     background: none;
 }
@@ -77,7 +77,7 @@ nav {
     margin-top: 15vh;
     text-align: center;
     align-items: center;
-    
+
     line-height: 0;
 }
 
@@ -94,14 +94,14 @@ nav {
 }
 
 .titlePage {
-    
+
     font-weight: normal;
     font-size: 50px;
     line-height: 0;
     margin-bottom: 6vh;
 }
 
-.section1Product{
+.section1Product {
     display: flex;
     flex-wrap: wrap-reverse;
     align-items: center;
@@ -123,7 +123,7 @@ nav {
     border: solid 1.7px;
     border-color: #cac4d0;
     border-radius: 8px;
-    
+
     line-height: 0;
     font-size: 24px;
     text-decoration: none;
@@ -153,28 +153,28 @@ main {
 
 .divBtnSearch {
     text-align: center;
-    
+
     font-size: 20px;
     margin-bottom: 2.5rem;
 }
 
-#btnAll.filterAll{
+#btnAll.filterAll {
     background-color: #e8def8;
 }
 
-#btnPetrouchka.filterPetrouchka{
+#btnPetrouchka.filterPetrouchka {
     background-color: #e8def8;
 }
 
-#btnBibi.filterBibi{
+#btnBibi.filterBibi {
     background-color: #e8def8;
 }
 
-#btnDoukie.filterDoukie{
+#btnDoukie.filterDoukie {
     background-color: #e8def8;
 }
 
-#btnOther.filterOther{
+#btnOther.filterOther {
     background-color: #e8def8;
 }
 
@@ -188,7 +188,6 @@ footer {
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(99, 24, 67, 1) 50%, rgba(84, 26, 99, 1) 100%);
     transition: all 800ms;
     justify-content: center;
-    
     gap: 25vw;
 }
 
@@ -196,39 +195,40 @@ footer:hover {
     height: 22vh;
 }
 
-footer a{
-    color:#ff8fb1;
+footer a {
+    color: #ff8fb1;
 }
 
 .paragrapheFooter {
     color: #ffd8e4;
 }
 
-footer img{
+footer img {
     height: 10px;
     aspect-ratio: 1/1;
 }
 
-#divContact, #divAuthor{
+#divContact,
+#divAuthor {
     display: flex;
     align-items: center;
-    flex-direction:column;
+    flex-direction: column;
     line-height: 0;
 }
 
-.titleFooter{
+.titleFooter {
     font-size: 2.5rem;
 }
 
-#divContact :not(.titleFooter){
+#divContact :not(.titleFooter) {
     display: none;
 }
 
-footer:hover #divContact :not(.titleFooter){
+footer:hover #divContact :not(.titleFooter) {
     display: flex;
 }
 
-#imgProduct{
+#imgProduct {
     border-radius: 20px;
     margin: 2vh 0 0 2vw;
     aspect-ratio: 1/1;
@@ -236,7 +236,7 @@ footer:hover #divContact :not(.titleFooter){
     object-fit: cover;
 }
 
-.section2Product{
+.section2Product {
     display: flex;
     background-color: #ffffff;
     border-radius: 20px;
@@ -246,75 +246,67 @@ footer:hover #divContact :not(.titleFooter){
     opacity: 0.7;
 }
 
-#modalProduct{
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.9);
+#modalProduct {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
-#modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  border-radius: 20px;
-}
-
-#caption {
-  margin: auto;
-  display: block;
-  font-size: 3rem;
-  width: 80%;
-  text-align: center;
-  color: #fef7ff;
-  padding: 10px 0;
-  height: 150px;
+#modalContent {
+    margin: auto;
+    display: block;
+    width: 70%;
+    max-width: 700px;
+    border-radius: 20px;
 }
 
 .close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #fef7ff;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-  
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fef7ff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+
 }
 
-.close:hover, .close:focus {
-  color: #fef7ff;
-  text-decoration: none;
-  cursor: pointer;
+.close:hover,
+.close:focus {
+    color: #fef7ff;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-#prix{
+#prix {
     font-size: 4rem;
     color: #49454f;
     line-height: 0;
 }
 
-#divPrixDesc{
+#divPrixDesc {
     flex-wrap: wrap;
     margin: 5vh 0 0 5vw;
 }
 
-#description{
-    max-width: 20px;
+#description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-#btnBuy{
+#btnBuy {
     background-color: #000000;
 }
 
-#divAddtocart{
+#divAddtocart {
     position: absolute;
 }
 
@@ -422,7 +414,7 @@ textarea {
     margin-bottom: 20px;
 }
 
-.benefitsContainer {
+.benefitContainer {
     display: flex;
     justify-content: space-around;
     margin: 40px 0;
@@ -539,11 +531,11 @@ input:focus {
     margin-bottom: 30px;
 }
 
-.imgSocial{
+.imgSocial {
     object-fit: cover;
     max-height: 50px;
     aspect-ratio: 1/1;
-    
+
 }
 
 .socialBtn {
@@ -569,8 +561,16 @@ input:focus {
     color: #49454f;
 }
 
-.signupLink {
+.signupLien {
     color: #633b48;
     font-weight: bold;
     text-decoration: underline;
+}
+
+#divTitleBanner{
+    margin-top: 13vh;
+}
+
+.imgBanner{
+
 }
