@@ -1,275 +1,506 @@
 <!DOCTYPE html>
 <html lang="FR">
-
-<head>
+  <head>
     <title>Pepet Store</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <img alt="logo" src="./Images/logo.png" />
+      <h1>PepetStore™</h1>
+    </header>
     <nav>
-        <a id="btnMenuPrincipal" class="btnNav btnNavHome">
-            <img src="./Images/MenuPrincipal.png" alt="imgMenuPrincipal" class="imgNav">
-        </a>
-        <button id="btnPlus" class="btnNav btnNavHome">
-            +
-        </button>
-        <a id="btnHome" class="btnNav btnNavHome" href="Index.html">
-            <img src="./Images/Home.png" alt="imgHome" class="imgNav">
-        </a>
-        <p class="navText">Accueil</p>
-        <a id="btnAccount" class="btnNav btnNavHome" href="Account.html">
-            <img src="./Images/Account.png" alt="imgAccount" class="imgNav">
-        </a>
-        <p class="navText">Compte</p>
-        <a id="btnSettings" class="btnNav btnNavHome" href="Settings.html">
-            <img src="./Images/Settings.png" alt="imgSettings" class="imgNav">
-        </a>
-        <p class="navText">Paramètres</p>
-        <a id="btnCart" class="btnNav btnNavHome" href="Cart.html">
-            <img src="./Images/Cart.png" alt="imgCart" class="imgNav">
-        </a>
-        <p class="navText">Panier</p>
+      <a id="btnMenuPrincipal" class="btnNav btnNavHome">
+        <img
+          src="./Images/MenuPrincipal.png"
+          alt="imgMenuPrincipal"
+          class="imgNav"
+        />
+      </a>
+      <button id="btnPlus" class="btnNav btnNavHome">+</button>
+      <a id="btnHome" class="btnNav btnNavHome" href="Index.html">
+        <img src="./Images/Home.png" alt="imgHome" class="imgNav" />
+      </a>
+      <p class="navText">Accueil</p>
+      <a id="btnAccount" class="btnNav btnNavHome" href="Account.html">
+        <img src="./Images/Account.png" alt="imgAccount" class="imgNav" />
+      </a>
+      <p class="navText">Compte</p>
+      <a id="btnSettings" class="btnNav btnNavHome" href="Settings.html">
+        <img src="./Images/Settings.png" alt="imgSettings" class="imgNav" />
+      </a>
+      <p class="navText">Paramètres</p>
+      <a id="btnCart" class="btnNav btnNavHome" href="Cart.html">
+        <img src="./Images/Cart.png" alt="imgCart" class="imgNav" />
+      </a>
+      <p class="navText">Panier</p>
     </nav>
     <main>
-        <section id="section1">
-            <a id="btnLeftArrow" href="Index.html">
-                <img src="./Images/leftArrow.png" alt="imgLeftArrow" id="imgLeftArrow">
-            </a>
-            <h1 id="PepetStore" class="titlePage">PepetStore™</h1>
-            <div id="divBtnFilter">
-                <a id="btnAll" class="btnFilter filterAll" href="Index.html" onclick="btnOnclick(this)"><span
-                        id="spanAll">✔ Tout</span>
-                </a>
-                <a id="btnPetrouchka" class="btnFilter filterAll" href="pepet.html" onclick="btnOnclick(this)"><span
-                        id="spanPetrouchka">Petrouchka</span>
-                </a>
-                <a id="btnBibi" class="btnFilter filterAll" href="bibi.html" onclick="btnOnclick(this)"><span
-                        id="spanBibi">Bibi</span>
-                </a>
-                <a id="btnDoukie" class="btnFilter filterAll" href="doukie.html" onclick="btnOnclick(this)"><span
-                        id="spanDoukie">Doukie</span>
-                </a>
-                <a id="btnOther" class="btnFilter filterAll" href="other.html" onclick="btnOnclick(this)"><span
-                        id="spanOther">Autre</span>
-                </a>
-            </div>
-        </section>
-        <section id="section2">
-            <div class="divBtnSearch">
-                <img alt="PepetDodo" src="./Images/Petrouchka/Dodo.jpg" class="imgSearch"><br>
-                <span>PepetDodo</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetDebout" src="./Images/Petrouchka/Debout.jpg" class="imgSearch"><br>
-                <span>PepetDebout</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetTigre" src="./Images/Petrouchka/Tigre.jpg" class="imgSearch"><br>
-                <span>PepetTigre</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetTriste" src="./Images/Petrouchka/Triste.jpg" class="imgSearch"><br>
-                <span>PepetTriste</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetBébé" src="./Images/Petrouchka/Bebe.jpg" class="imgSearch"><br>
-                <span>PepetBébé</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetLémurien" src="./Images/Petrouchka/Lemurien.jpg" class="imgSearch"><br>
-                <span>PepetLémurien</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetPoilu" src="./Images/Petrouchka/Poilue.jpg" class="imgSearch"><br>
-                <span>PepetPoilu</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetConcombre" src="./Images/Petrouchka/Concombre.jpg" class="imgSearch"><br>
-                <span>PepetConcombre</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetChoqué" src="./Images/Petrouchka/Choque.jpg" class="imgSearch"><br>
-                <span>PepetChoqué</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetSoleil" src="./Images/Petrouchka/Soleil.jpg" class="imgSearch"><br>
-                <span>PepetSoleil</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetAttentive" src="./Images/Petrouchka/Attentive.jpg" class="imgSearch"><br>
-                <span>PepetAttentive</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetFaché" src="./Images/Petrouchka/Fache.jpg" class="imgSearch"><br>
-                <span>PepetFaché</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetChaise" src="./Images/Petrouchka/Chaise.jpg" class="imgSearch"><br>
-                <span>PepetChaise</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetCouché" src="./Images/Petrouchka/Couche.jpg" class="imgSearch"><br>
-                <span>PepetCouché</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetCurieuse" src="./Images/Petrouchka/Curieuse.jpg" class="imgSearch"><br>
-                <span>PepetCurieuse</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetFatigué" src="./Images/Petrouchka/Fatigue.jpg" class="imgSearch"><br>
-                <span>PepetFatigué</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetCaché" src="./Images/Petrouchka/Cache.jpg" class="imgSearch"><br>
-                <span>PepetCaché</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetJouer" src="./Images/Petrouchka/Jouer.jpg" class="imgSearch"><br>
-                <span>PepetJouer</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetBlanche" src="./Images/Petrouchka/Blanche.jpg" class="imgSearch"><br>
-                <span>PepetBlanche</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetÉblouie" src="./Images/Petrouchka/Eblouie.jpg" class="imgSearch"><br>
-                <span>PepetÉblouie</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetÉtiré" src="./Images/Petrouchka/Etire.jpg" class="imgSearch"><br>
-                <span>PepetÉtiré</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetToast" src="./Images/Petrouchka/Toast.jpg" class="imgSearch"><br>
-                <span>PepetToast</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetLèche" src="./Images/Petrouchka/Leche.jpg" class="imgSearch"><br>
-                <span>PepetLèche</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="PepetBaguette" src="./Images/Petrouchka/Baguette.jpg" class="imgSearch"><br>
-                <span>PepetBaguette</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiAura" src="./Images/Bibi/aura.jpg" class="imgSearch"><br>
-                <span>BibiAura</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiBagarre" src="./Images/Bibi/bagarre.jpg" class="imgSearch"><br>
-                <span>BibiBagarre</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiCaché" src="./Images/Bibi/cache.jpg" class="imgSearch"><br>
-                <span>BibiCaché</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiCadeau" src="./Images/Bibi/cadeau.jpg" class="imgSearch"><br>
-                <span>BibiCadeau</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiCollier" src="./Images/Bibi/collier.jpg" class="imgSearch"><br>
-                <span>BibiCollier</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiCouché" src="./Images/Bibi/couche.jpg" class="imgSearch"><br>
-                <span>BibiCouché</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiFaché" src="./Images/Bibi/fache.jpg" class="imgSearch"><br>
-                <span>BibiFaché</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiFier" src="./Images/Bibi/fier.jpg" class="imgSearch"><br>
-                <span>BibiFier</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiJaune" src="./Images/Bibi/jaune.jpg" class="imgSearch"><br>
-                <span>BibiJaune</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiLavabo" src="./Images/Bibi/lavabo.jpeg" class="imgSearch"><br>
-                <span>BibiLavabo</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiModel" src="./Images/Bibi/model.jpg" class="imgSearch"><br>
-                <span>BibiModel</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiMuscle" src="./Images/Bibi/muscle.jpg" class="imgSearch"><br>
-                <span>BibiMuscle</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiSaut" src="./Images/Bibi/saut.jpg" class="imgSearch"><br>
-                <span>BibiSaut</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiSerpent" src="./Images/Bibi/serpent.jpg" class="imgSearch"><br>
-                <span>BibiSerpent</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiTour" src="./Images/Bibi/tour.jpg" class="imgSearch"><br>
-                <span>BibiTour</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiVertige" src="./Images/Bibi/vertige.jpg" class="imgSearch"><br>
-                <span>BibiVertige</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiLinge" src="./Images/Bibi/linge.jpg" class="imgSearch"><br>
-                <span>BibiLinge</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiMuffin" src="./Images/Bibi/muffin.jpg" class="imgSearch"><br>
-                <span>BibiMuffin</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiBoire" src="./Images/Bibi/boire.jpg" class="imgSearch"><br>
-                <span>BibiBoire</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiBaille" src="./Images/Bibi/baille.jpg" class="imgSearch"><br>
-                <span>BibiBaille</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiPot" src="./Images/Bibi/pot.jpg" class="imgSearch"><br>
-                <span>BibiPot</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiHyène" src="./Images/Bibi/hyene.jpg" class="imgSearch"><br>
-                <span>BibiHyène</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiChameau" src="./Images/Bibi/chameau.jpg" class="imgSearch"><br>
-                <span>BibiChameau</span>
-            </div>
-            <div class="divBtnSearch">
-                <img alt="BibiNonchalant" src="./Images/Bibi/nonchalant.jpg" class="imgSearch"><br>
-                <span>BibiNonchalant</span>
-            </div>
-        </section>
+      <section id="section1">
+        <a id="btnLeftArrow" href="Index.html">
+          <img
+            src="./Images/leftArrow.png"
+            alt="imgLeftArrow"
+            id="imgLeftArrow"
+          />
+        </a>
+        <h1 id="PepetStore" class="titlePage">Accueil</h1>
+        <div id="divBtnFilter">
+          <a
+            id="btnAll"
+            class="btnFilter filterAll"
+            href="Index.html"
+            onclick="btnOnclick(this)"
+            ><span id="spanAll">✔ Tout</span>
+          </a>
+          <a
+            id="btnPetrouchka"
+            class="btnFilter filterAll"
+            href="pepet.html"
+            onclick="btnOnclick(this)"
+            ><span id="spanPetrouchka">Petrouchka</span>
+          </a>
+          <a
+            id="btnBibi"
+            class="btnFilter filterAll"
+            href="bibi.html"
+            onclick="btnOnclick(this)"
+            ><span id="spanBibi">Bibi</span>
+          </a>
+          <a
+            id="btnDoukie"
+            class="btnFilter filterAll"
+            href="doukie.html"
+            onclick="btnOnclick(this)"
+            ><span id="spanDoukie">Doukie</span>
+          </a>
+          <a
+            id="btnOther"
+            class="btnFilter filterAll"
+            href="other.html"
+            onclick="btnOnclick(this)"
+            ><span id="spanOther">Autre</span>
+          </a>
+        </div>
+      </section>
+      <section id="section2">
+        <div class="divBtnSearch">
+          <img
+            alt="PepetDodo"
+            src="./Images/Petrouchka/Dodo.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetDodo</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetDebout"
+            src="./Images/Petrouchka/Debout.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetDebout</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetTigre"
+            src="./Images/Petrouchka/Tigre.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetTigre</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetTriste"
+            src="./Images/Petrouchka/Triste.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetTriste</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetBébé"
+            src="./Images/Petrouchka/Bebe.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetBébé</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetLémurien"
+            src="./Images/Petrouchka/Lemurien.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetLémurien</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetPoilu"
+            src="./Images/Petrouchka/Poilue.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetPoilu</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetConcombre"
+            src="./Images/Petrouchka/Concombre.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetConcombre</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetChoqué"
+            src="./Images/Petrouchka/Choque.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetChoqué</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetSoleil"
+            src="./Images/Petrouchka/Soleil.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetSoleil</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetAttentive"
+            src="./Images/Petrouchka/Attentive.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetAttentive</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetFaché"
+            src="./Images/Petrouchka/Fache.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetFaché</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetChaise"
+            src="./Images/Petrouchka/Chaise.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetChaise</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetCouché"
+            src="./Images/Petrouchka/Couche.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetCouché</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetCurieuse"
+            src="./Images/Petrouchka/Curieuse.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetCurieuse</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetFatigué"
+            src="./Images/Petrouchka/Fatigue.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetFatigué</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetCaché"
+            src="./Images/Petrouchka/Cache.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetCaché</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetJouer"
+            src="./Images/Petrouchka/Jouer.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetJouer</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetBlanche"
+            src="./Images/Petrouchka/Blanche.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetBlanche</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetÉblouie"
+            src="./Images/Petrouchka/Eblouie.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetÉblouie</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetÉtiré"
+            src="./Images/Petrouchka/Etire.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetÉtiré</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetToast"
+            src="./Images/Petrouchka/Toast.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetToast</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetLèche"
+            src="./Images/Petrouchka/Leche.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetLèche</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="PepetBaguette"
+            src="./Images/Petrouchka/Baguette.jpg"
+            class="imgSearch"
+          /><br />
+          <span>PepetBaguette</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiAura"
+            src="./Images/Bibi/aura.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiAura</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiBagarre"
+            src="./Images/Bibi/bagarre.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiBagarre</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiCaché"
+            src="./Images/Bibi/cache.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiCaché</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiCadeau"
+            src="./Images/Bibi/cadeau.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiCadeau</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiCollier"
+            src="./Images/Bibi/collier.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiCollier</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiCouché"
+            src="./Images/Bibi/couche.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiCouché</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiFaché"
+            src="./Images/Bibi/fache.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiFaché</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiFier"
+            src="./Images/Bibi/fier.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiFier</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiJaune"
+            src="./Images/Bibi/jaune.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiJaune</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiLavabo"
+            src="./Images/Bibi/lavabo.jpeg"
+            class="imgSearch"
+          /><br />
+          <span>BibiLavabo</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiModel"
+            src="./Images/Bibi/model.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiModel</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiMuscle"
+            src="./Images/Bibi/muscle.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiMuscle</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiSaut"
+            src="./Images/Bibi/saut.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiSaut</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiSerpent"
+            src="./Images/Bibi/serpent.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiSerpent</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiTour"
+            src="./Images/Bibi/tour.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiTour</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiVertige"
+            src="./Images/Bibi/vertige.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiVertige</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiLinge"
+            src="./Images/Bibi/linge.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiLinge</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiMuffin"
+            src="./Images/Bibi/muffin.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiMuffin</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiBoire"
+            src="./Images/Bibi/boire.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiBoire</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiBaille"
+            src="./Images/Bibi/baille.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiBaille</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiPot"
+            src="./Images/Bibi/pot.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiPot</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiHyène"
+            src="./Images/Bibi/hyene.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiHyène</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiChameau"
+            src="./Images/Bibi/chameau.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiChameau</span>
+        </div>
+        <div class="divBtnSearch">
+          <img
+            alt="BibiNonchalant"
+            src="./Images/Bibi/nonchalant.jpg"
+            class="imgSearch"
+          /><br />
+          <span>BibiNonchalant</span>
+        </div>
+      </section>
     </main>
     <footer>
-        <div id="divContact">
-            <p class="paragrapheFooter titleFooter">Des questions ?</p>
-            <p class="paragrapheFooter">Contactez moi sur :</p>
-            <p class="paragrapheFooter"><a href=mailto:david.sottas@eduvaud.ch>david.sottas@eduvaud.ch</a></p>
-            <p class="paragrapheFooter">Ou écrivez moi un formulaire :</p>
-            <p class="paragrapheFooter"><a href="contact.html" target="_blank">Contact</a><img alt="lienExterne"
-                    src="./Images/lienExterne.png"></p>
-        </div>
-        <div id="divAuthor">
-            <p class="paragrapheFooter titleFooter">À propos</p>
-            <p class="paragrapheFooter"><a href="author.html" target="_blank">Auteur</a><img alt="lienExterne"
-                    src="./Images/lienExterne.png"></p>
-            <p class="paragrapheFooter"><a href="https://www.etml.ch/" target="_blank">ETML</a><img alt="lienExterne"
-                    src="./Images/lienExterne.png"></p>
-            <p class="paragrapheFooter"><a href="https://www.preverenges.ch/" target="_blank">Lieu de
-                    fabrication</a><img alt="lienExterne" src="./Images/lienExterne.png"></p>
-        </div>
+      <div id="divContact">
+        <p class="paragrapheFooter titleFooter">Des questions ?</p>
+        <p class="paragrapheFooter">Contactez moi sur :</p>
+        <p class="paragrapheFooter">
+          <a href="mailto:david.sottas@eduvaud.ch">david.sottas@eduvaud.ch</a>
+        </p>
+        <p class="paragrapheFooter">Ou écrivez moi un formulaire :</p>
+        <p class="paragrapheFooter">
+          <a href="contact.html" target="_blank">Contact</a
+          ><img alt="lienExterne" src="./Images/lienExterne.png" />
+        </p>
+      </div>
+      <div id="divAuthor">
+        <p class="paragrapheFooter titleFooter">À propos</p>
+        <p class="paragrapheFooter">
+          <a href="author.html" target="_blank">Auteur</a
+          ><img alt="lienExterne" src="./Images/lienExterne.png" />
+        </p>
+        <p class="paragrapheFooter">
+          <a href="https://www.etml.ch/" target="_blank">ETML</a
+          ><img alt="lienExterne" src="./Images/lienExterne.png" />
+        </p>
+        <p class="paragrapheFooter">
+          <a href="https://www.preverenges.ch/" target="_blank"
+            >Lieu de fabrication</a
+          ><img alt="lienExterne" src="./Images/lienExterne.png" />
+        </p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

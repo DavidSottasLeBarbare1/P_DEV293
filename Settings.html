@@ -1,53 +1,188 @@
 <!DOCTYPE html>
-<head>
-    <title>Paramètres</title>
-    <link rel="stylesheet" href="style.css">
+<html lang="FR">
+  <head>
+    <title>Paramètres - Pepet Store</title>
+    <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
-</head>
-<body>
+  </head>
+
+  <body>
+    <header>
+      <img alt="logo" src="./Images/logo.png" />
+      <h1>PepetStore™</h1>
+    </header>
     <nav>
-        <a id="btnMenuPrincipal" class="btnNav btnNavSettings" onclick="btnOnclick(this)">
-            <img src="./Images/MenuPrincipal.png" alt="imgMenuPrincipal" class="imgNav">
-        </a>
-        <button id="btnPlus" class="btnNav btnNavSettings" onclick="btnOnclick(this)">
-            +
-        </button>
-        <a id="btnHome" class="btnNav btnNavSettings" onclick="btnOnclick(this)" href="Index.html">
-            <img src="./Images/Home.png" alt="imgHome" class="imgNav">
-        </a>
-        <p class="navText">Accueil</p>
-        <a id="btnAccount" class="btnNav btnNavSettings" onclick="btnOnclick(this)" href="Account.html">
-            <img src="./Images/Account.png" alt="imgAccount" class="imgNav">
-        </a>
-        <p class="navText">Compte</p>
-        <a id="btnSettings" class="btnNav btnNavSettings" onclick="btnOnclick(this)" href="Settings.html">
-            <img src="./Images/Settings.png" alt="imgSettings" class="imgNav">
-        </a>
-        <p class="navText">Paramètres</p>
-        <a id="btnCart" class="btnNav btnNavSettings" onclick="btnOnclick(this)" href="Cart.html">
-            <img src="./Images/Cart.png" alt="imgCart" class="imgNav">
-        </a><p class="navText">Panier</p>
+      <a id="btnMenuPrincipal" class="btnNav btnNavSettings">
+        <img
+          src="./Images/MenuPrincipal.png"
+          alt="imgMenuPrincipal"
+          class="imgNav"
+        />
+      </a>
+      <button id="btnPlus" class="btnNav btnNavSettings">+</button>
+      <a id="btnHome" class="btnNav btnNavSettings" href="Index.html">
+        <img src="./Images/Home.png" alt="imgHome" class="imgNav" />
+      </a>
+      <p class="navText">Accueil</p>
+      <a id="btnAccount" class="btnNav btnNavSettings" href="Account.html">
+        <img src="./Images/Account.png" alt="imgAccount" class="imgNav" />
+      </a>
+      <p class="navText">Compte</p>
+      <a id="btnSettings" class="btnNav btnNavSettings" href="Settings.html">
+        <img src="./Images/Settings.png" alt="imgSettings" class="imgNav" />
+      </a>
+      <p class="navText">Paramètres</p>
+      <a id="btnCart" class="btnNav btnNavSettings" href="Cart.html">
+        <img src="./Images/Cart.png" alt="imgCart" class="imgNav" />
+      </a>
+      <p class="navText">Panier</p>
     </nav>
     <main>
-        <section id="Section1">
-            <a id="btnLeftArrow" href="Index.html">
-                <img src="./Images/leftArrow.png" alt="imgLeftArrow" id="imgLeftArrow">
-            </a>
-        </section>
+      <section id="section1">
+        <a id="btnLeftArrow" href="Index.html">
+          <img
+            src="./Images/leftArrow.png"
+            alt="imgLeftArrow"
+            id="imgLeftArrow"
+          />
+        </a>
+        <h1 id="PepetStore" class="titlePage">Paramètres</h1>
+      </section>
+      <section id="settingsContainer">
+        <div class="settingSection">
+          <h3 class="sectionTitle">Affichage</h3>
+          <div class="settingItem">
+            <span class="settingLabel">Mode sombre</span>
+            <div class="settingControl">
+              <label class="switch">
+                <input type="checkbox" id="darkMode" />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="settingItem">
+            <span class="settingLabel">Taille du texte</span>
+            <div class="settingControl">
+              <select id="fontSize">
+                <option value="small">Petit</option>
+                <option value="medium" selected>Moyen</option>
+                <option value="large">Grand</option>
+              </select>
+            </div>
+          </div>
+          <div class="settingItem">
+            <span class="settingLabel">Couleur principale</span>
+            <div class="settingControl">
+              <input
+                type="color"
+                class="colorPicker"
+                id="accentColor"
+                value="#ffd8e4"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="settingSection">
+          <h3 class="sectionTitle">Notifications</h3>
+          <div class="settingItem">
+            <span class="settingLabel">Activer les notifications</span>
+            <div class="settingControl">
+              <label class="switch">
+                <input type="checkbox" id="pushNotif" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="settingItem">
+            <span class="settingLabel">Sons</span>
+            <div class="settingControl">
+              <label class="switch">
+                <input type="checkbox" id="sounds" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="settingItem">
+            <span class="settingLabel">Volume</span>
+            <div class="settingControl">
+              <input type="range" id="volume" min="0" max="100" value="50" />
+              <span class="rangeValue" id="volumeValue">50%</span>
+            </div>
+          </div>
+        </div>
+        <div class="settingSection">
+          <h3 class="sectionTitle">Boutique</h3>
+          <div class="settingItem">
+            <span class="settingLabel">Affichage par défaut</span>
+            <div class="settingControl">
+              <select id="defaultView">
+                <option value="all" selected>Tous les produits</option>
+                <option value="petrouchka">Petrouchka</option>
+                <option value="bibi">Bibi</option>
+                <option value="doukie">Doukie</option>
+                <option value="other">Autres</option>
+              </select>
+            </div>
+          </div>
+          <div class="settingItem">
+            <span class="settingLabel">Sauvegarde automatique du panier</span>
+            <div class="settingControl">
+              <label class="switch">
+                <input type="checkbox" id="autoSave" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="settingItem">
+            <span class="settingLabel">Langue</span>
+            <div class="settingControl">
+              <select id="language">
+                <option value="fr" selected>Français</option>
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="actionButtons">
+          <button
+            class="btnSettings btnSettingsSecondary"
+            onclick="resetSettings()"
+          >
+            Réinitialiser
+          </button>
+        </div>
+      </section>
     </main>
     <footer>
-        <div id="divContact">
-        <p class="paragrapheFooter titleFooter" >Des questions ?</p>
+      <div id="divContact">
+        <p class="paragrapheFooter titleFooter">Des questions ?</p>
         <p class="paragrapheFooter">Contactez moi sur :</p>
-        <p class="paragrapheFooter"><a href=mailto:david.sottas@eduvaud.ch>david.sottas@eduvaud.ch</a></p>
+        <p class="paragrapheFooter">
+          <a href="mailto:david.sottas@eduvaud.ch">david.sottas@eduvaud.ch</a>
+        </p>
         <p class="paragrapheFooter">Ou écrivez moi un formulaire :</p>
-        <p class="paragrapheFooter"><a href="contact.html" target="_blank">Contact</a><img id="imgLienExterne" alt="lienExterne" src="./Images/lienExterne.png"></p>
-        </div>
-        <div id="divAuthor">
+        <p class="paragrapheFooter">
+          <a href="contact.html" target="_blank">Contact</a
+          ><img alt="lienExterne" src="./Images/lienExterne.png" />
+        </p>
+      </div>
+      <div id="divAuthor">
         <p class="paragrapheFooter titleFooter">À propos</p>
-        <p class="paragrapheFooter"><a href="author.html" target="_blank">Auteur</a><img id="imgLienExterne" alt="lienExterne" src="./Images/lienExterne.png"></p>
-        <p class="paragrapheFooter"><a href="https://www.etml.ch/" target="_blank">ETML</a><img id="imgLienExterne" alt="lienExterne" src="./Images/lienExterne.png"></p>
-        <p class="paragrapheFooter"><a href="https://www.preverenges.ch/" target="_blank">Lieu de fabrication</a><img id="imgLienExterne" alt="lienExterne" src="./Images/lienExterne.png"></p>
-        </div>
+        <p class="paragrapheFooter">
+          <a href="author.html" target="_blank">Auteur</a
+          ><img alt="lienExterne" src="./Images/lienExterne.png" />
+        </p>
+        <p class="paragrapheFooter">
+          <a href="https://www.etml.ch/" target="_blank">ETML</a
+          ><img alt="lienExterne" src="./Images/lienExterne.png" />
+        </p>
+        <p class="paragrapheFooter">
+          <a href="https://www.preverenges.ch/" target="_blank"
+            >Lieu de fabrication</a
+          ><img alt="lienExterne" src="./Images/lienExterne.png" />
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
+</html>
