@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-
+<html lang="FR">
 <head>
-    <title>Mon Compte</title>
+    <title>Mon Compte - Pepet Store</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 
 <body>
+    <header>
+      <img alt="logo" src="./Images/logo.png" />
+      <h1>PepetStore™</h1>
+    </header>
     <nav>
-        <a id="btnMenuPrincipal" class="btnNav btnNavAccount" onclick="btnOnclick(this)">
-            <img src="./Images/MenuPrincipal.png" alt="imgMenuPrincipal" class="imgNav">
-        </a>
-        <button id="btnPlus" class="btnNav btnNavAccount" onclick="btnOnclick(this)">
-            +
-        </button>
         <a id="btnHome" class="btnNav btnNavAccount" onclick="btnOnclick(this)" href="Index.html">
             <img src="./Images/Home.png" alt="imgHome" class="imgNav">
         </a>
@@ -32,14 +30,13 @@
         <p class="navText">Panier</p>
     </nav>
     <main>
-        <section id="Section1">
+        <section id="section1">
             <a id="btnLeftArrow" href="Index.html">
                 <img src="./Images/leftArrow.png" alt="imgLeftArrow" id="imgLeftArrow">
             </a>
+            <h1 class="titlePage">Compte</h1>
         </section>
         <div id="accountContainer">
-            <img src="./Images/icon.jpg" alt="Welcome Pepet" class="welcomeIcon">
-            <p class="accountMessage">Bienvenue sur le PepetStore !</p>
             <p class="accountMessage">Connectez-vous pour accéder à votre collection de PepNFT</p>
 
             <div class="benefitContainer">
@@ -89,3 +86,4 @@
         </div>
     </footer>
 </body>
+</html>

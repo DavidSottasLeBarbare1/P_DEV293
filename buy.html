@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="FR">
+  <head>
+    <title>Achat - Pepet Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img alt="logo" src="./Images/logo.png" />
+      <h1>PepetStore™</h1>
+    </header>
+    <nav>
+      <a id="btnHome" class="btnNav btnNavCart" href="Index.html">
+        <img src="./Images/Home.png" alt="imgHome" class="imgNav" />
+      </a>
+      <p class="navText">Accueil</p>
+      <a id="btnAccount" class="btnNav btnNavCart" href="Account.html">
+        <img src="./Images/Account.png" alt="imgAccount" class="imgNav" />
+      </a>
+      <p class="navText">Compte</p>
+      <a id="btnSettings" class="btnNav btnNavCart" href="Settings.html">
+        <img src="./Images/Settings.png" alt="imgSettings" class="imgNav" />
+      </a>
+      <p class="navText">Paramètres</p>
+      <a id="btnCart" class="btnNav btnNavCart" href="Cart.html">
+        <img src="./Images/Cart.png" alt="imgCart" class="imgNav" />
+      </a>
+      <p class="navText">Panier</p>
+    </nav>
+    <main>
+      <section id="section1">
+        <a id="btnLeftArrow" href="Index.html">
+          <img
+            src="./Images/leftArrow.png"
+            alt="imgLeftArrow"
+            id="imgLeftArrow"
+          />
+        </a>
+        <h1 class="titlePage">Achat</h1>
+      </section>
+
+      <section id="buyContainer">
+        <div class="buyHeader">
+          <h2 class="buyTitle">Finaliser votre achat</h2>
+        </div>
+
+        <div class="buyContent">
+          <div class="productSummary">
+            <h3 class="sectionTitle">Votre commande</h3>
+            <div class="productItem">
+              <div class="productImage">
+                <img src="./Images/Cart.png" alt="Product" />
+              </div>
+              <div class="productDetails">
+                <h4 class="productName">PepNFT #001</h4>
+                <p class="productPrice">49.99 CHF</p>
+              </div>
+            </div>
+            <div class="priceSummary">
+              <div class="priceRow total">
+                <span>Total:</span>
+                <span>49.99 CHF</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="paymentSection">
+            <h3 class="sectionTitle">Paiement</h3>
+            <div class="paymentOptions">
+              <div class="paymentOption">
+                <input type="radio" id="card" name="payment" value="card" checked>
+                <label for="card" class="paymentLabel">Carte bancaire</label>
+              </div>
+              <div class="paymentOption">
+                <input type="radio" id="paypal" name="payment" value="paypal">
+                <label for="paypal" class="paymentLabel">PayPal</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="buyActions">
+          <a href="Cart.html" class="btnCart btnCartSecondary">Retour</a>
+          <button class="btnCart btnBuyPrimary">Payer maintenant</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="divContact">
+        <p class="paragrapheFooter titleFooter">Des questions ?</p>
+        <p class="paragrapheFooter">Contactez moi sur :</p>
+        <p class="paragrapheFooter">
+          <a href="mailto:david.sottas@eduvaud.ch">david.sottas@eduvaud.ch</a>
+        </p>
+        <p class="paragrapheFooter">Ou écrivez moi un formulaire :</p>
+        <p class="paragrapheFooter">
+          <a href="contact.html" target="_blank">Contact</a
+          ><img alt="lienExterne" src="./Images/lienExterne.png" />
+        </p>
+      </div>
+      <div id="divAuthor">
+        <p class="paragrapheFooter titleFooter">À propos</p>
+        <p class="paragrapheFooter">
+          <a href="author.html" target="_blank">Auteur</a
+          ><img alt="lienExterne" src="./Images/lienExterne.png" />
+        </p>
+        <p class="paragrapheFooter">
+          <a href="https://www.etml.ch/" target="_blank">ETML</a
+          ><img alt="lienExterne" src="./Images/lienExterne.png" />
+        </p>
+        <p class="paragrapheFooter">
+          <a href="https://www.preverenges.ch/" target="_blank"
+            >Lieu de fabrication</a
+          ><img alt="lienExterne" src="./Images/lienExterne.png" />
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

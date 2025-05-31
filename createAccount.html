@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Créer un compte - Pepet Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a id="btnHome" class="btnNav btnNavAccount" onclick="btnOnclick(this)" href="Index.html">
+            <img src="./Images/Home.png" alt="imgHome" class="imgNav">
+        </a>
+        <p class="navText">Accueil</p>
+        <a id="btnAccount" class="btnNav btnNavAccount" onclick="btnOnclick(this)" href="Account.html">
+            <img src="./Images/Account.png" alt="imgAccount" class="imgNav">
+        </a>
+        <p class="navText">Compte</p>
+        <a id="btnSettings" class="btnNav btnNavAccount" onclick="btnOnclick(this)" href="Settings.html">
+            <img src="./Images/Settings.png" alt="imgSettings" class="imgNav">
+        </a>
+        <p class="navText">Paramètres</p>
+        <a id="btnCart" class="btnNav btnNavAccount" onclick="btnOnclick(this)" href="Cart.html">
+            <img src="./Images/Cart.png" alt="imgCart" class="imgNav">
+        </a>
+        <p class="navText">Panier</p>
+    </nav>
+    <main>
+        <section id="Section1">
+            <a id="btnLeftArrow" href="Account.html">
+                <img src="./Images/leftArrow.png" alt="imgLeftArrow" id="imgLeftArrow">
+            </a>
+        </section>
+        <div id="createAccountContainer">
+            <p class="accountMessage">Créez votre compte PepNFT</p>
+            <p class="subMessage">Rejoignez la communauté Pepetrouch et commencez votre collection</p>
+
+            <form id="createAccountForm">
+                <div class="formGroup">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+
+                <div class="formGroup">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+
+                <div class="formGroup">
+                    <label for="email">Adresse e-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="formGroup">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="formGroup">
+                    <label for="confirmPassword">Confirmer le mot de passe</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+
+                <div class="formGroup">
+                    <label for="dateNaissance">Date de naissance</label>
+                    <input type="date" id="dateNaissance" name="dateNaissance" required>
+                </div>
+
+                <div class="checkboxGroup">
+                    <input type="checkbox" id="conditions" name="conditions" required>
+                    <label for="conditions" class="checkboxLabel">J'accepte les conditions d'utilisation et la politique de confidentialité</label>
+                </div>
+
+                <div class="checkboxGroup">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter" class="checkboxLabel">Je souhaite recevoir les dernières nouveautés par Email</label>
+                </div>
+
+                <div class="accountOptions">
+                    <button type="submit" class="btnAccount">Créer mon compte</button>
+                </div>
+            </form>
+
+            <div class="divider">
+                <div class="divider-line"></div>
+                <span class="divider-text">ou</span>
+                <div class="divider-line"></div>
+            </div>
+
+            <div class="socialLogin">
+                <div class="socialBtn">
+                    <img src="./Images/google.png" alt="Google" class="imgSocial"  title="Se connecter avec Google">
+                </div>
+                <div class="socialBtn">
+                    <img src="./Images/facebook.png" alt="Facebook" class="imgSocial"  title="Se connecter avec Facebook">
+                </div>
+                <div class="socialBtn">
+                    <img src="./Images/apple.png" alt="Apple" class="imgSocial"  title="Se connecter avec Apple">
+                </div>
+            </div>
+
+            <div class="accountPrompt">
+                Vous avez déjà un compte ? 
+                <a href="login.html" class="signupLien">Se connecter</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="divContact">
+            <p class="paragrapheFooter titleFooter">Des questions ?</p>
+            <p class="paragrapheFooter">Contactez moi sur :</p>
+            <p class="paragrapheFooter"><a href=mailto:david.sottas@eduvaud.ch>david.sottas@eduvaud.ch</a></p>
+            <p class="paragrapheFooter">Ou écrivez moi un formulaire :</p>
+            <p class="paragrapheFooter"><a href="contact.html" target="_blank">Contact</a><img id="imgLienExterne"
+                    alt="lienExterne" src="./Images/lienExterne.png"></p>
+        </div>
+        <div id="divAuthor">
+            <p class="paragrapheFooter titleFooter">À propos</p>
+            <p class="paragrapheFooter"><a href="author.html" target="_blank">Auteur</a><img id="imgLienExterne"
+                    alt="lienExterne" src="./Images/lienExterne.png"></p>
+            <p class="paragrapheFooter"><a href="https://www.etml.ch/" target="_blank">ETML</a><img id="imgLienExterne"
+                    alt="lienExterne" src="./Images/lienExterne.png"></p>
+            <p class="paragrapheFooter"><a href="https://www.preverenges.ch/" target="_blank">Lieu de
+                    fabrication</a><img id="imgLienExterne" alt="lienExterne" src="./Images/lienExterne.png"></p>
+        </div>
+    </footer>
+</body>

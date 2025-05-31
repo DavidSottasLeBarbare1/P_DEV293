@@ -1,89 +1,118 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Pepet Store</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+  <title>Contact - Pepet Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 
 <body>
-    <nav>
-        <a id="btnMenuPrincipal" class="btnNav btnNavHome">
-            <img src="./Images/MenuPrincipal.png" alt="imgMenuPrincipal" class="imgNav">
-        </a>
-        <button id="btnPlus" class="btnNav btnNavHome">
-            +
-        </button>
-        <a id="btnHome" class="btnNav btnNavHome" href="Index.html">
-            <img src="./Images/Home.png" alt="imgHome" class="imgNav">
-        </a>
-        <p class="navText">Accueil</p>
-        <a id="btnAccount" class="btnNav btnNavHome" href="Account.html">
-            <img src="./Images/Account.png" alt="imgAccount" class="imgNav">
-        </a>
-        <p class="navText">Compte</p>
-        <a id="btnSettings" class="btnNav btnNavHome" href="Settings.html">
-            <img src="./Images/Settings.png" alt="imgSettings" class="imgNav">
-        </a>
-        <p class="navText">Paramètres</p>
-        <a id="btnCart" class="btnNav btnNavHome" href="Cart.html">
-            <img src="./Images/Cart.png" alt="imgCart" class="imgNav">
-        </a>
-        <p class="navText">Panier</p>
-    </nav>
-    <main>
-        <section id="section1">
-            <a id="btnLeftArrow" href="Index.html">
-                <img src="./Images/leftArrow.png" alt="imgLeftArrow" id="imgLeftArrow">
-            </a>
-        </section>
-        <form id="contactForm" action="#" method="post">
-            <div class="formGroup">
-                <label for="nom">Nom</label>
-                <input type="text" id="nom" name="nom" required>
-            </div>
-            <div class="formGroup">
-                <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" name="prenom" required>
-            </div>
-            <div class="formGroup">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="formGroup">
-                <label for="sujet">Sujet</label>
-                <select id="sujet" name="sujet" required>
-                    <option disabled selected value>Selectionnez une option</option>
-                    <option>Question par rapport au site</option>
-                    <option>Demande de remboursement</option>
-                    <option>Problème de connexion</option>
-                    <option>Autre</option>
-                </select>
-            </div>
-            <div class="formGroup">
-                <label for="message">Message</label>
-                <textarea id="message" name="message"></textarea>
-            </div>
-            <button type="submit" class="btnSubmit">Envoyer</button>
-        </form>
-    </main>
-    <footer>
-        <div id="divContact">
-            <p class="paragrapheFooter titleFooter">Des questions ?</p>
-            <p class="paragrapheFooter">Contactez moi sur :</p>
-            <p class="paragrapheFooter"><a href=mailto:david.sottas@eduvaud.ch>david.sottas@eduvaud.ch</a></p>
-            <p class="paragrapheFooter">Ou écrivez moi un formulaire :</p>
-            <p class="paragrapheFooter"><a href="contact.html" target="_blank">Contact</a><img id="imgLienExterne"
-                    alt="lienExterne" src="./Images/lienExterne.png"></p>
-        </div>
-        <div id="divAuthor">
-            <p class="paragrapheFooter titleFooter">À propos</p>
-            <p class="paragrapheFooter"><a href="author.html" target="_blank">Auteur</a><img id="imgLienExterne"
-                    alt="lienExterne" src="./Images/lienExterne.png"></p>
-            <p class="paragrapheFooter"><a href="https://www.etml.ch/" target="_blank">ETML</a><img id="imgLienExterne"
-                    alt="lienExterne" src="./Images/lienExterne.png"></p>
-            <p class="paragrapheFooter"><a href="https://www.preverenges.ch/" target="_blank">Lieu de
-                    fabrication</a><img id="imgLienExterne" alt="lienExterne" src="./Images/lienExterne.png"></p>
-        </div>
-    </footer>
+  <header>
+    <img alt="logo" src="./Images/logo.png" />
+    <h1>PepetStore™</h1>
+  </header>
+  <nav>
+    <a id="btnHome" class="btnNav btnNavHome" href="Index.html">
+      <img src="./Images/Home.png" alt="imgHome" class="imgNav" />
+    </a>
+    <p class="navText">Accueil</p>
+    <a id="btnAccount" class="btnNav btnNavHome" href="Account.html">
+      <img src="./Images/Account.png" alt="imgAccount" class="imgNav" />
+    </a>
+    <p class="navText">Compte</p>
+    <a id="btnSettings" class="btnNav btnNavHome" href="Settings.html">
+      <img src="./Images/Settings.png" alt="imgSettings" class="imgNav" />
+    </a>
+    <p class="navText">Paramètres</p>
+    <a id="btnCart" class="btnNav btnNavHome" href="Cart.html">
+      <img src="./Images/Cart.png" alt="imgCart" class="imgNav" />
+    </a>
+    <p class="navText">Panier</p>
+  </nav>
+  <main>
+    <section id="section1">
+      <a id="btnLeftArrow" href="Index.html">
+        <img
+          src="./Images/leftArrow.png"
+          alt="imgLeftArrow"
+          id="imgLeftArrow"
+        />
+      </a>
+    </section>
+    <form id="contactForm" action="#" method="post">
+      <div class="formGroup">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" required />
+      </div>
+      <div class="formGroup">
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" name="prenom" required />
+      </div>
+      <div class="formGroup">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="formGroup">
+        <label for="sujet">Sujet</label>
+        <select id="sujet" name="sujet" required>
+          <option disabled selected value>Selectionnez une option</option>
+          <option>Question par rapport au site</option>
+          <option>Demande de remboursement</option>
+          <option>Problème de connexion</option>
+          <option>Autre</option>
+        </select>
+      </div>
+      <div class="formGroup">
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <button type="submit" class="btnSubmit">Envoyer</button>
+    </form>
+  </main>
+  <footer>
+    <div id="divContact">
+      <p class="paragrapheFooter titleFooter">Des questions ?</p>
+      <p class="paragrapheFooter">Contactez moi sur :</p>
+      <p class="paragrapheFooter">
+        <a href="mailto:david.sottas@eduvaud.ch">david.sottas@eduvaud.ch</a>
+      </p>
+      <p class="paragrapheFooter">Ou écrivez moi un formulaire :</p>
+      <p class="paragrapheFooter">
+        <a href="contact.html" target="_blank">Contact</a
+        ><img
+          id="imgLienExterne"
+          alt="lienExterne"
+          src="./Images/lienExterne.png"
+        />
+      </p>
+    </div>
+    <div id="divAuthor">
+      <p class="paragrapheFooter titleFooter">À propos</p>
+      <p class="paragrapheFooter">
+        <a href="author.html" target="_blank">Auteur</a
+        ><img
+          id="imgLienExterne"
+          alt="lienExterne"
+          src="./Images/lienExterne.png"
+        />
+      </p>
+      <p class="paragrapheFooter">
+        <a href="https://www.etml.ch/" target="_blank">ETML</a
+        ><img
+          id="imgLienExterne"
+          alt="lienExterne"
+          src="./Images/lienExterne.png"
+        />
+      </p>
+      <p class="paragrapheFooter">
+        <a href="https://www.preverenges.ch/" target="_blank"
+          >Lieu de fabrication</a
+        ><img
+          id="imgLienExterne"
+          alt="lienExterne"
+          src="./Images/lienExterne.png"
+        />
+      </p>
+    </div>
+  </footer>
 </body>
